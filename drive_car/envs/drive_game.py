@@ -164,7 +164,7 @@ class driveGame:
             reward = 10000
         return reward
 
-    def is_done(self):
+    def finish(self):
         if not self.car.on_game or self.car.goal:
             self.car.game_check = 0
             self.car.distance = 0
