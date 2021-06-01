@@ -58,6 +58,6 @@ if __name__ == "__main__":
     epsilon_decay = 0.9
     learning_rate = 0.1
     gamma = 0.6
-    place_box = tuple((env.observation_space.high + np.ones(env.observation_space.shape)).astype(int))
+    num_box = tuple((env.observation_space.high + np.ones(env.observation_space.shape)).astype(int))
     val = np.zeros(num_box + (env.action_space.n,))
     gameRun()
