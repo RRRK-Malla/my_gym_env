@@ -26,4 +26,4 @@ class DriveEnv(gym.Env):
         return show, reward, comp, {}
 
     def render(self, mode="human", close=False):
-        self.pygame.view()
+        self.pygame.disp()
