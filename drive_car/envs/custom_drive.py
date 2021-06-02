@@ -9,7 +9,7 @@ class DriveEnv(gym.Env):
 
   def __init__(self):
         self.pygame = driveGame()
-        self.action_space = spaces.Discrete(3)
+        self.action_space = spaces.Discrete(5)
         self.observation_space = spaces.Box(np.array([0, 0, 0, 0, 0]), np.array([10, 10, 10, 10, 10]), dtype=np.int)
 
     def reset(self):
